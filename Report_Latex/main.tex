@@ -1,0 +1,138 @@
+\documentclass[twoside, 12pt]{article}
+\usepackage{Shapes}
+\usepackage[utf8]{vietnam}
+\usepackage{microtype}
+\usepackage{mathtools,amssymb}
+\usepackage{diagbox}
+\usepackage{lmodern}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{tasks}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+%%%%%%%%%%%%
+% \usepackage{indentfirst}
+\setlength{\parindent}{0pt}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{shapes.geometric, arrows}
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\medskip
+   \textbf{Ví dụ~\theexample : #1} \rmfamily}{\medskip}
+
+\newcounter{defs}[subsection]
+\newenvironment{defs}[1][]{\refstepcounter{defs}
+   \textbf{Định nghĩa~\thesubsection.\thedefs : #1} \rmfamily}
+
+\newcounter{clause}[subsection]
+\newenvironment{clause}[1][]{\refstepcounter{clause}\medskip
+   \textbf{Mệnh đề~\thesubsection.\theclause : #1} \rmfamily}{\medskip}
+%%%%%%%%%%%%%%%%%%%
+
+\usepackage{titlesec}
+\usepackage{mdframed}
+
+\usepackage{relsize}
+
+\usepackage{mathptmx}
+\usepackage{amsthm}
+\usepackage{multicol}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Định nghĩa}[section]
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Định lý}[section]
+
+\newtheorem*{remark}{Nhận xét}
+
+\newtheorem{vd}{Ví dụ}[section]
+\newtheorem{bt}{Bài tập}[section]
+\newtheorem{tc}{Tính chất}[section]
+\newtheorem{md}{Mệnh đề}[section]
+\newtheorem{cy}{Chú ý}[section]
+%%%%%%%%%%%%%%%%%%%
+
+
+%\fancyhead[LO, RE]{Toán Tin 01 - k64}
+%\fancyhead[LE, RO, font=\bfseries, color=HustRed]{MI4024 - Lớp 129852}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{Gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{cadmiumorange}{rgb}{0.93, 0.53, 0.18}
+\definecolor{sami}{RGB}{1,90,143}
+\lstdefinestyle{mystyle}{
+	frame=shadowbox,
+  language=SQL,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\normalsize\ttfamily},
+  numbers=left,
+  numberblanklines=true,
+  numbersep=5pt,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{sami},
+  morekeywords={USE},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{cadmiumorange},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=2,
+  keepspaces=true
+}
+\lstset{style=mystyle}
+\title{Báo cáo cuối kỳ}
+
+\subtitle{\begin{center}
+    KHO DỮ LIỆU VÀ KINH DOANH THÔNG MINH\\
+\end{center}\\Chủ đề:\\  Healthycare - Chăm sóc sức khỏe}
+\author{
+Nhóm thực hiện: & Nhóm 9 \\[0.3cm]
+%Thành viên:\\
+Nguyễn Thị Duyên & 20195866\\
+Phạm Thị Hoa & 20195874\\
+Trần Thị Hồng & 20195880\\
+Phạm Thu Trang & 20195931\\
+Trần Thị Hồng Vân & 20195941\\[0.3cm]
+Lớp: &133598 - MI4214\\
+Học kỳ: & 20212
+}
+\info{\textbf{Giảng viên hướng dẫn: ThS. Nguyễn Danh Tú} 
+}
+\logo[scale=0.62]{logotitle.png}
+
+
+
+%---------------------------------------------------------------------
+\newmdenv[linecolor=black,skipabove=\topsep,skipbelow=\topsep,      %|
+leftmargin=-5pt,rightmargin=-5pt,                                   %|
+innerleftmargin=5pt,innerrightmargin=5pt]{mybox}                    %|
+%---------------------------------------------------------------------
+\usepackage{indentfirst}
+\begin{document}
+\maketitlepage
+\newpage
+\tableofcontents
+%%%%%%%%%%%%%%%%%
+\newpage
+\newpage
+\input{contents/Chapter đầu}
+\newpage
+\input{contents/Chap đầu 1}
+\newpage
+\input{contents/Chap đầu 2}
+\newpage
+\input{contents/Chapter 1.tex}
+\newpage
+\input{contents/Chapter 2.tex}
+\newpage
+\input{contents/Chapter 3.tex}
+%\newpage
+%\input{contents/Chapter 4}
+\newpage
+\input{contents/Chapter cuối}
+\end{document} 
